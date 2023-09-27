@@ -5,7 +5,9 @@ describe('Test String', () => {
 })
 
 describe('Open Ui', () => {
-    it('Pass', () => {
+    it('Pass', function () {
         cy.visit('https://www.saucedemo.com/')
+
+        //cy.get('text').type('Olá imbecil')
     })
 })
