@@ -5,9 +5,10 @@ describe('Test String', () => {
 })
 
 describe('Open Ui', () => {
-    it('Pass', function () {
-        cy.visit('https://www.saucedemo.com/')
+    it('Pass', () => {
+        cy.visit('https://www.google.com.br/')
 
-        //cy.get('text').type('Olá imbecil')
+        cy.get('#APjFqb').type('Olá imbecil')
+        cy.get('input[class="gNO89b"]').click({ multiple: true, force: true })
     })
 })
