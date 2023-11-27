@@ -26,4 +26,8 @@ describe('Test expect', () => {
         expect(false).to.equal(tfvar)
     })
 
+    it('Pass with string', () => {
+        expect(nome).to.equal("Olá imbecil")
+    })
+
 })
