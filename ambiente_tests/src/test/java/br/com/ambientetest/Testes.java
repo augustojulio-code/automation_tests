@@ -7,23 +7,20 @@ import org.junit.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Testes {
 
     @Before
     public void setUp() {
 
-        System.setProperty("webdriver.chrome.driver", "src\\drive\\chrome.exe");
-
     }
 
     @Test
     public void openPage() {
-        ChromeOptions options = new ChromeOptions();
-        options.addArguments("--start-maximized");
-        WebDriver driver = new ChromeDriver(options);
+        WebDriver driver = new ChromeDriver();
 
-        driver.get("https://www.google.com.br/");
+        driver.get("https://www.google.com");
     }
 
 }
